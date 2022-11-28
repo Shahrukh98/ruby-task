@@ -1,0 +1,16 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+gem 'nokogiri'
+gem 'google-api-client'
+gem 'googleauth'
+gem 'pdf-reader', '1.1.0'
+gem 'kristin'
+gem 'pdfcrowd'
+gem 'pdf-reader-html'
+gem 'pdftohtmlr'
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+# gem "rails"
