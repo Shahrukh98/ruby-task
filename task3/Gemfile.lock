@@ -1,0 +1,23 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    Ascii85 (1.0.3)
+    mini_portile2 (2.8.0)
+    nokogiri (1.13.9)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    pdf-reader (1.1.0)
+      Ascii85 (~> 1.0.0)
+      ruby-rc4
+    racc (1.6.0)
+    ruby-rc4 (0.1.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri
+  pdf-reader
+
+BUNDLED WITH
+   2.1.4

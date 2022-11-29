@@ -1,17 +1,3 @@
-# require 'googleauth'
-# require 'google/apis/drive_v2'
-
-# Drive = Google::Apis::DriveV2
-# drive = Drive::DriveService.new
-# # Drive::AUTH_DRIVE is equal to https://www.googleapis.com/auth/drive
-# drive.authorization = Google::Auth.get_application_default([Drive::AUTH_DRIVE])
-
-# a = drive.list_drives()
-
-# puts a
-
-# # folder_id = '1v8kAzirygnGsKm4X0eX_OhNgFPw865aQ'
-
 require 'pdf-reader'
 require 'date'
 
@@ -33,7 +19,7 @@ def get_date(string)
     if arr[-1].length == 4
         date = DateTime.parse("%s/%s/%s" % [arr[1],arr[0],arr[2]])
     else
-        date = DateTime.parse("%s/%s/20%s" % [arr[0],arr[1],arr[2]])
+        date = DateTime.parse("%s/%s/20%s" % [arr[1],arr[0],arr[2]])
     end
     return date.strftime('%Y/%m/%d')
 end
@@ -57,4 +43,5 @@ files.each { |file|
         end
     end
 }
+
 puts results
